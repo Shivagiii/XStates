@@ -21,7 +21,7 @@ function App() {
     if(fetchCountry){
       fetchCountry().then((res) => {
         setList({...list,countryList:[...res]})
-      })
+      }).catch((e) => console.error(e))
     }
    },[])
 
@@ -31,7 +31,7 @@ function App() {
     fetchState(selected.selectedCountry).then((res) => {
       //console.log(res);
       setList({...list,stateList:[...res]})
-    })  
+    }).catch((e) => console.error(e))  
   }
 
  },[selected.selectedCountry])
@@ -42,7 +42,7 @@ function App() {
     fetchCity(selected.selectedCountry,selected.selectedState).then((res) => {
       //console.log(res);
       setList({...list,cityList:[...res]})
-    })  
+    }).catch((e) => console.error(e))
   }
 
  },[selected.selectedState])
