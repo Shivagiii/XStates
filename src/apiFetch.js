@@ -20,8 +20,9 @@ export const fetchState = async(country) => {
         return data
     }
     catch(e){
-        console.log(e)
+        console.error(e)
     }
+    
 }
 export const fetchCity = async(country,state) => {
     //console.log(country)
@@ -31,6 +32,6 @@ export const fetchCity = async(country,state) => {
         return data
     }
     catch(e){
-        console.log(e)
+        console.error(e)
     }
 }

@@ -79,7 +79,7 @@ function sCountry(e){
 <br/>
 {selected.selectedCity ? 
   <div>
-      <h4>You selected </h4><h2>{selected.selectedCountry}, </h2><h4>{selected.selectedState}, {selected.selectedCity}</h4>
+      <h4>You selected </h4><h2>{selected.selectedCity}, </h2><h4>{selected.selectedState}, {selected.selectedCountry}</h4>
       </div>
       :
       <></>}
